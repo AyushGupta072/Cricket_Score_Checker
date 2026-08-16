@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..900&family=JetBrains+Mono:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/design.css">
+    <script src="scripts/controllers/controller.js" type="module"></script>
+    <title>Cricket Counter App</title>
+</head>
+<body>
+    <div id="root">
+        <header id="header">
+            <span class="eyebrow">● Live Scoring</span>
+            <h1>Cricket Counter</h1>
+        </header>
+        <main class="body">
+            <div class="score">
+                <h1>
+                    <span id="runCount"></span>
+                    <span id="wicketCount"></span>
+                </h1>
+                <h3 id="overCount"></h3>
+                <div id="requireBox" class="require-Box">
+                    <span>Require</span>
+                    <span id="requiredRuns"></span>
+                    <span>runs in</span>
+                    <span id="requiredBalls"></span>
+                    <span>balls</span>  
+                    <button class="close-btn" id="closeRequireBox">&times;</button> 
+                </div>
+                <span id="resultMessage" class="result-Message"></span>
+                <div class="popupTarget" id="popupTarget">
+                    <div class="popup-content">
+                        <h3>Enter Target Details</h3>
+                        <input type="number" id="runsInput" placeholder="Runs required">
+                        <input type="number" id="oversInput" placeholder="Total Overs">
+                        <button id="submitTarget">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <h4 class="sectionLabel">This Over</h4>
+            <div class="liveStatus">
+                <button id="firstStatusButton" class="liveStatusButtons"></button>
+                <button id="secondStatusButton" class="liveStatusButtons"></button>
+                <button id="thirdStatusButton" class="liveStatusButtons"></button>
+                <button id="fourthStatusButton" class="liveStatusButtons"></button>
+                <button id="fifthStatusButton" class="liveStatusButtons"></button>
+                <button id="sixthStatusButton" class="liveStatusButtons"></button>
+            </div>
+            <div class="operations">
+                <button id="DOT_Button" class="operationButtons">DOT</button>
+                <button id="WIDE_Button" class="operationButtons">WIDE</button>
+                <button id="NO_BALL_Button" class="operationButtons">NO BALL</button>
+                <button id="1_Button" class="operationButtons">1</button>
+                <button id="2_Button" class="operationButtons">2</button>
+                <button id="3_Button" class="operationButtons">3</button>
+                <button id="4_Button" class="operationButtons">4</button>
+                <button id="6_Button" class="operationButtons">6</button>
+                <button id="WICKET_Button" class="operationButtons">WICKET</button>
+                <button id="Scoreboard_Button" class="operationButtons">Scoreboard</button>
+                <button id="Target_Mode_Button" class="operationButtons">Target Mode</button>
+                <button id="UNDO_Button" class="operationButtons">UNDO</button>
+            </div>
+            <div class="popupScoreBoard" id="popupScoreBoard">
+                    <div class="popup-content">
+                       <table>
+                        <thead>
+                            <th>Over</th>
+                            <th>Runs</th>
+                            <th>Extras</th>
+                            <th>Total Score</th>
+                        </thead>
+                            <tbody id="scoreboard">
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+        </main>
+        <footer id="footer">
+            <h6>Build By @AyushGupta072</h6>
+            <p id="footerEmail">Email : <a href="mailto:ankugupta1011@gmail.com">ankugupta1011@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
