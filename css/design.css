@@ -80,7 +80,7 @@ body {
 }
 
 #header h1 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Frances', serif;
     font-size: 1.9em;
     font-weight: 700;
     font-style: italic;
@@ -198,7 +198,7 @@ body {
     justify-content: center;
     gap: 6px;
     font-size: 1.05em;
-    font-family: 'Fraunces', serif;
+    font-family: 'Frances', serif;
     font-weight: 600;
     color: var(--amber);
     position: relative;
@@ -276,7 +276,7 @@ body {
 }
 
 .popup-content h3 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Frances', serif;
     font-style: italic;
     font-size: 1.6em;
     color: var(--amber);
